@@ -1,0 +1,90 @@
+name: 🌟 Good First Issue Management
+
+on:
+  issues:
+    types: [opened, labeled, unlabeled]
+  pull_request:
+    types: [opened, closed, merged]
+
+jobs:
+  manage-good-first-issues:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'good first issue') || contains(github.event.pull_request.labels.*.name, 'good first issue')
+    
+    steps:
+    - name: Welcome New Contributors
+      if: github.event.action == 'opened' && github.event.issue
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const issue = context.payload.issue;
+          const isFirstTimeContributor = issue.author_association === 'FIRST_TIME_CONTRIBUTOR';
+          
+          if (isFirstTimeContributor) {
+            github.rest.issues.createComment({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `👋 Welcome to FeedMind! Thanks for your interest in contributing!
+              
+              This looks like your first issue here. Here are some helpful resources:
+              - 📖 [Contributing Guide](CONTRIBUTING.md)
+              - 🌟 [Good First Issues](GOOD_FIRST_ISSUES.md)
+              - 🚀 [Project Setup](README.md#quick-start)
+              
+              Feel free to ask questions in the comments. Our maintainers are here to help!
+              
+              Happy coding! 🧠✨`
+            });
+          }
+
+    - name: Add Help Wanted Label
+      if: github.event.action == 'opened' && github.event.issue && contains(github.event.issue.labels.*.name, 'good first issue')
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.addLabels({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            labels: ['help wanted']
+          });
+
+    - name: Thank Contributor on PR Merge
+      if: github.event.action == 'closed' && github.event.pull_request.merged && contains(github.event.pull_request.labels.*.name, 'good first issue')
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const pr = context.payload.pull_request;
+          const isFirstTimeContributor = pr.author_association === 'FIRST_TIME_CONTRIBUTOR';
+          
+          if (isFirstTimeContributor) {
+            github.rest.issues.createComment({
+              issue_number: pr.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🎉 Congratulations on your first contribution to FeedMind!
+              
+              Thank you for helping improve our AI-powered news aggregator. Your contribution makes a difference!
+              
+              Consider:
+              - ⭐ Starring the repository
+              - 👀 Watching for new issues
+              - 🔄 Contributing more features
+              
+              We'd love to have you as a regular contributor! 🚀`
+            });
+          }
+
+  update-project-board:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'good first issue')
+    
+    steps:
+    - name: Add to Good First Issues Project
+      uses: actions/github-script@v7
+      with:
+        script: |
+          // This would add issues to a project board if configured
+          console.log('Issue created with good first issue label');
+          console.log('Consider setting up a project board for tracking!');

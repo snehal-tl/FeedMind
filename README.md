@@ -2,6 +2,10 @@
 
 > **"An AI that curates what your mind wants to read."**
 
+[![Good First Issues](https://img.shields.io/github/issues/Neon-Genesis1299/FeedMind/good%20first%20issue?color=7057ff&label=Good%20First%20Issues)](https://github.com/Neon-Genesis1299/FeedMind/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+[![Help Wanted](https://img.shields.io/github/issues/Neon-Genesis1299/FeedMind/help%20wanted?color=008672&label=Help%20Wanted)](https://github.com/Neon-Genesis1299/FeedMind/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-orange.svg)](CONTRIBUTING.md)
+
 FeedMind is an open-source **AI-driven news aggregator** that collects news from multiple sources, analyzes sentiment, detects bias, and intelligently classifies articles by topic — giving users a personalized, balanced, and engaging reading experience.
 
 ---
@@ -106,13 +110,41 @@ Visit 👉 http://localhost:3000
 
 ## 🤝 Contributing
 
-Contributions are always welcome!
+We welcome contributions from developers of all skill levels! Whether you're a beginner or experienced developer, there's a place for you in the FeedMind community.
 
-1. 🍴 Fork this repo
-2. 🌿 Create your feature branch: `git checkout -b feature/your-feature`
-3. 💾 Commit your changes: `git commit -m "Added new feature"`
-4. 📤 Push to branch: `git push origin feature/your-feature`
-5. 🔁 Open a Pull Request
+### 🌟 For New Contributors
+
+**Getting Started:**
+1. 📖 Read our [Contributing Guide](CONTRIBUTING.md)
+2. 🌟 Check out [Good First Issues](GOOD_FIRST_ISSUES.md)
+3. 💬 Join discussions in our issues
+4. 🚀 Start with documentation, testing, or small features
+
+**Perfect First Contributions:**
+- 📝 Documentation improvements
+- 🎨 UI/UX enhancements  
+- 🧪 Writing tests
+- 🔧 Setting up project infrastructure
+- 🌐 Frontend components
+- 🔗 API endpoints
+
+### 🔄 Standard Workflow
+
+1. 🍴 **Fork this repo**
+2. 🌿 **Create your feature branch:** `git checkout -b feature/your-feature`
+3. 💾 **Commit your changes:** `git commit -m "feat: add new feature"`
+4. 📤 **Push to branch:** `git push origin feature/your-feature`
+5. 🔁 **Open a Pull Request** with detailed description
+
+### 📋 Before Contributing
+
+- Check existing issues and PRs to avoid duplicates
+- Comment on issues you'd like to work on
+- Follow our coding standards and conventions
+- Write tests for new features
+- Update documentation as needed
+
+**Need help?** Don't hesitate to ask questions in issue comments!
 
 
 
