@@ -1,7 +1,7 @@
 ---
 name: 🌟 Good First Issue
 about: Beginner-friendly tasks for new contributors
-title: "[Good First Issue] "
+title: ""
 labels: good first issue, help wanted
 assignees: ''
 ---

@@ -4,7 +4,7 @@ This document contains beginner-friendly issues that are perfect for new contrib
 
 ## 📚 Documentation & Setup Issues
 
-### Issue #1: Create Project Structure and Boilerplate
+### Create Project Structure and Boilerplate
 **Labels:** `good first issue` `setup` `help wanted`  
 **Difficulty:** ⭐⭐☆☆☆
 
@@ -31,7 +31,7 @@ Set up the basic project folder structure for FeedMind with initial boilerplate 
 
 ---
 
-### Issue #2: Add Code of Conduct
+### Add Code of Conduct
 **Labels:** `good first issue` `documentation` `help wanted`  
 **Difficulty:** ⭐☆☆☆☆
 
@@ -57,7 +57,7 @@ Add a comprehensive Code of Conduct to establish community guidelines.
 
 ---
 
-### Issue #3: Create Environment Setup Guide
+### Add Environment Setup Guide
 **Labels:** `good first issue` `documentation` `help wanted`  
 **Difficulty:** ⭐⭐☆☆☆
 
@@ -83,7 +83,7 @@ Create detailed environment setup documentation for different operating systems.
 
 ---
 
-### Issue #4: Add License File
+### Add License File
 **Labels:** `good first issue` `documentation` `legal`  
 **Difficulty:** ⭐☆☆☆☆
 

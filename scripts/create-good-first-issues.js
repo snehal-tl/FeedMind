@@ -13,7 +13,7 @@ const { execSync } = require('child_process');
 
 const issues = [
   {
-    title: "[Good First Issue] Create Project Structure and Boilerplate",
+    title: "Create Project Structure and Boilerplate",
     body: `## 📝 Description
 Set up the basic project folder structure for FeedMind with initial boilerplate code.
 
@@ -46,7 +46,7 @@ Establish the foundation structure for frontend, backend, and AI engine componen
   },
   
   {
-    title: "[Good First Issue] Add Code of Conduct",
+    title: "Add Code of Conduct",
     body: `## 📝 Description
 Add a comprehensive Code of Conduct to establish community guidelines and create a welcoming environment for all contributors.
 
@@ -79,7 +79,7 @@ Create a safe and inclusive environment for all contributors.
   },
 
   {
-    title: "[Good First Issue] Create Basic Navigation Component",
+    title: "Create Basic Navigation Component",
     body: `## 📝 Description
 Build a responsive navigation header component for the FeedMind application.
 
@@ -114,7 +114,7 @@ Create a user-friendly navigation component that works across all devices.
   },
 
   {
-    title: "[Good First Issue] Create Basic Express Server Setup",
+    title: "Create Basic Express Server Setup",
     body: `## 📝 Description
 Set up a basic Express.js server with essential middleware and routing structure for the FeedMind backend API.
 
@@ -152,7 +152,7 @@ Establish a robust, secure, and well-structured Express.js backend foundation.
   },
 
   {
-    title: "[Good First Issue] Create Basic Sentiment Analysis Script",
+    title: "Create Basic Sentiment Analysis Script",
     body: `## 📝 Description
 Create a Python script that performs basic sentiment analysis on news article text using NLP libraries.
 
@@ -189,7 +189,7 @@ Build the foundation for AI-powered sentiment analysis of news articles.
   },
 
   {
-    title: "[Good First Issue] Set Up Testing Framework",
+    title: "Set Up Testing Framework",
     body: `## 📝 Description
 Set up comprehensive testing frameworks for frontend (Jest), backend (Mocha/Jest), and AI components (pytest).
 
@@ -227,7 +227,7 @@ Establish robust testing infrastructure to ensure code quality and reliability.
   },
 
   {
-    title: "[Good First Issue] Add Environment Setup Guide",
+    title: "Add Environment Setup Guide",
     body: `## 📝 Description
 Create detailed environment setup documentation for different operating systems to help new contributors get started quickly.
 
@@ -264,7 +264,7 @@ Make it easy for new contributors to set up their development environment.
   },
 
   {
-    title: "[Good First Issue] Design Loading Skeleton Components",
+    title: "Design Loading Skeleton Components",
     body: `## 📝 Description
 Create loading skeleton components for news articles and feeds to improve perceived performance and user experience.
 
